@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Attribute Input Mode</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <!--    <link rel="stylesheet" href="main.css" />-->
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="isMarried" id="isMarried" data-controls="additionalForm" />
+                    <label for="isMarried">Sudah berkeluarga?</label>
+                </div>
+
+                <fieldset class="additional-form-group" id="additionalForm">
+                    <legend>Data Keluarga</legend>
+                    <div class="form-group">
+                        <label for="wifeName">Siapa nama istri Anda?</label>
+                        <input type="text" id="wifeName" name="wifeName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="childCount">Berapa orang anak?</label>
+                        <input type="number" id="childCount" name="childCount" />
+                    </div>
+                </fieldset>
+                <div class="form-group"><label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="email"
+                        aria-describedby="additional_email_information"><span id="additional_email_information"
+                        class="form-control-hint">For example, example@gmail.com</span>
+                </div>
+
+                <div class="form-group">
+                    <label>Card number</label>
+                    <input type="text" inputmode="numeric" id="card-number" name="card-number" autocomplete="cc-number"
+                        required pattern="[0-9]+" />
+                </div>
+                <div class="form-group date-code">
+                    <div>
+                        <label for="expiry-date">Expiry date</label>
+                        <input type="text" id="expiry-date" class="expiry-date" name="expiry-date" autocomplete="cc-exp"
+                            required placeholder="MM/YY" minlength="4" pattern="[0-9/]+" />
+                    </div>
+                    <div>
+                        <label for="security-code">Security code</label>
+                        <input type="text" inputmode="numeric" id="security-code" name="security-code" required 5
+                            minlength="3" maxlength="4" pattern="[0-9]+" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="new-password" />
+                </div>
+                <div class="form-group">
+                    <label for="password-confirm">Konfirmasi Password</label>
+                    <input type="password" name="password-confirm" id="password-confirm" autocomplete="new-password" />
+                </div>
+                <div class="form-group">
+                    <button class="btn">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
