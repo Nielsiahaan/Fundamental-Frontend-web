@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f1eb; /* Warna latar belakang */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #88ab8e; /* Warna header */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* Note Styles */
+.note {
+  background-color: #afc8ad; /* Warna latar kartu */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+  transition: transform 0.3s ease;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+}
+
+.note h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.note p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.note button {
+  padding: 8px 16px;
+  background-color: #e0afa5; /* Warna tombol delete */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.note button:hover {
+  background-color: #c5897f; /* Warna tombol delete saat dihover */
+}
+
+/* Form Styles */
+#note-form {
+  background-color: #eee7da; /* Warna latar belakang formulir */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+}
+
+#note-form input[type="text"],
+#note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#note-form button {
+  padding: 10px 20px;
+  background-color: #88ab8e; /* Warna tombol hapus */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#note-form button:hover {
+  background-color: #6c8f75; /* Warna tombol hapus saat dihover */
+}
+
+/* Footer Styles */
+note-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  grid-column: 1 / -1;
+}
