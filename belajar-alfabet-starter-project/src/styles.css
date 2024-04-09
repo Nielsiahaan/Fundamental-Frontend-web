@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  padding-block: 32px;
+  padding-inline: 24px;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.title-section {
+  margin-block: 16px 24px;
+}
+
+/* 
+ Header
+*/
+header {
+  position: sticky;
+}
+
+header .wrapper {
+  background-color: #2d3e50;
+
+  color: beige;
+}
+
+.brand-name {
+  font-size: 2rem;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* 
+* Character list
+*/
+.char-list {
+  margin-block: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  column-gap: 2%;
+  row-gap: 24px;
+}
+
+.char-item {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+
+  flex-basis: 15%;
+
+  transition: all 150ms ease-in;
+}
+
+.char-item:hover,
+.char-item:focus-visible {
+  scale: 1.05;
+  box-shadow: 0 2px 4px 2px #33333377;
+}
+
+.char-item .char {
+  text-align: center;
+  font-size: 3em;
+}
+
+.char-item .char__description {
+  margin-block: 0.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.char-item .char__example {
+  margin-block-start: 1.5rem;
+  text-align: center;
+}
+
+.char-item .char__example-img {
+  width: 75%;
+  margin-block-end: 1rem;
+}
+
+/* 
+ * Footer
+*/
+footer {
+  color: beige;
+}
+
+footer .wrapper {
+  background-color: #2d3e50;
+}
+
+.foot-information {
+  text-align: center;
+}
